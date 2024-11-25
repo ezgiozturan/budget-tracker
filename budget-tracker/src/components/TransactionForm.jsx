@@ -31,11 +31,13 @@ export default function TransactionForm() {
 
       if (budgetLimits[category] && newTotal > budgetLimits[category]) {
         alert(`Warning: You have exceeded the budget limit for ${category}!`);
+        alert(`UYARI: ${category} İÇİN BELİRLENEN LİMİT AŞILDI!`);
       } else if (
         budgetLimits[category] &&
         newTotal >= budgetLimits[category] * 0.8
       ) {
         alert(`Warning: You are nearing the budget limit for ${category}!`);
+        alert(`UYARI: ${category} İÇİN BELİRLENEN LİMİTE YAKLAŞTINIZ!`);
       }
 
       dispatch(addExpense(transaction));
