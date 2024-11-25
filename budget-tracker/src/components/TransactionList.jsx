@@ -10,6 +10,8 @@ export default function TransactionList() {
         {incomes.map((income, index) => (
           <li key={index} className="border-b p-2">
             {income.description}: ${income.amount} on {income.date}
+            {income.description}:{income.date} tarihinde {income.amount} tl
+            gelir elde ettiniz.
           </li>
         ))}
       </ul>
@@ -18,6 +20,8 @@ export default function TransactionList() {
         {expenses.map((expense, index) => (
           <li key={index} className="border-b p-2">
             {expense.description}: ${expense.amount} on {expense.date}
+            {expense.description}: {expense.date} tarihinde {expense.amount} tl
+            harcandı.
           </li>
         ))}
       </ul>
