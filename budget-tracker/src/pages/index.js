@@ -1,3 +1,4 @@
+import ExpensesByCategory from "@/components/ExpensesByCategory";
 import SetBudgetLimit from "@/components/SetBudgetLimit";
 import TransactionForm from "@/components/TransactionForm";
 import TransactionList from "@/components/TransactionList";
@@ -9,6 +10,7 @@ export default function Home() {
       <TransactionForm />
       <TransactionList />
       <SetBudgetLimit />
+      <ExpensesByCategory />
     </div>
   );
 }
